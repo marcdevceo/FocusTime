@@ -14,6 +14,10 @@ import { Timer } from "../src/features/Timer";
 import { FocusHistory } from "../src/features/FocusHistory";
 import { fontSizes, spacing } from "../src/utils/sizes";
 
+const STATUSES = {
+  COMPLETED: 1,
+  CANCELED: 2,
+}
 
 export default function App() {
   const [currentSubject, setCurrentSubject] = useState<string | null>(null);
